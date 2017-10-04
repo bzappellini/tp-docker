@@ -50,6 +50,8 @@ services:
       - 12201:12201
       # GELF UDP
       - 12201:12201/udp
+      # para prueba log texto plano Ej: echo "esto es una prueba\n" | nc 127.0.0.1 5555 
+      - 5555:5555
 # Volumes for persisting data, see https://docs.docker.com/engine/admin/volumes/volumes/
 volumes:
   mongo_data:
